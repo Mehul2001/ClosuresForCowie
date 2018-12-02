@@ -5,13 +5,16 @@ the divide function will take one argument that it will divide the closure
 */
 
 const divide = function (num) {
-  // insert function definition here
+  function division(i){
+   return i / num;
+  }
+  return division;
 }
 
 // replace null with the correct assignment to the variable
-const divide5 = null
-const divide10 = null
-const divide20 = null
+const divide5 = new divide(5)
+const divide10 = new divide(10)
+const divide20 = new divide(20)
 
 module.exports = {
   divide,
