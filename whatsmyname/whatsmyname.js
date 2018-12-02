@@ -4,7 +4,19 @@ The function will take one argument, 1. a string
 whatsmyname should return a function. Use the tests to guide you
 */
 
-const whatsmyname = function () {
-}
+var whatsmyname = function (name) {
+    var result = false;
+    var naming = function(ipName) {
+     if(ipName === name){
+         result = true;
+       
+     }
+       return result;
+   
+    };
+    return naming;
+};
 
-module.exports = whatsmyname
+ var ppl1 = new whatsmyname("mehul");
+  var ppl2 = new whatsmyname("mehul1");
+
